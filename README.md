@@ -8,7 +8,7 @@ I wanted to understand customer behavior at an optical retail chain: why custome
 
 ## Data
 
-~67,000 transactions from an optical retail chain in Kazakhstan, 2021–2024. After cleaning and merging with the customer database, 44,000 records remained. All data is anonymized — customer_id is an MD5 hash.
+~67,000 transactions from an optical retail chain in Kazakhstan, 03.2020–05.2026. After cleaning and merging with the customer database, 44,000 records remained. All data is anonymized — customer_id is an MD5 hash.
 
 Stack: Python (pandas, scikit-learn) for cleaning and ML, PostgreSQL for cohort analysis and retention via SQL views, Power BI for dashboards.
 
