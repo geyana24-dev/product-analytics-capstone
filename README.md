@@ -65,15 +65,15 @@ Top features by importance: first purchase type — contact lenses, then eyewear
 ## Repo structure
 
 ```
-├── notebooks/
+├── notebook/
 │   ├── 01_cleaning.ipynb
 │   ├── 02_eda.ipynb
 │   └── 03_ml.ipynb
-├── sql/
+├── SQL/
 │   └── cohort_retention_rfm.sql
-├── power_bi/
+├── PBI/
 │   └── MKL_Retention.pbix
-├── data/
+├── Data/
 └── README.md
 ```
 
