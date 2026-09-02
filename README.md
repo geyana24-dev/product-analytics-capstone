@@ -1,10 +1,10 @@
 # Optical Retail Customer Analysis
 
-Capstone project in product analytics (Outpeer, 2026). Customer segmentation, retention, and an ML model predicting repeat visits.
+Capstone project in product analytics (Outpeer, 2026). Customer segmentation, retention, and ML model predicting repeat visits.
 
 ## The problem
 
-I wanted to understand customer behavior at an optical retail chain: why customers don't come back, who actually drives revenue, and whether a repeat visit can be predicted from first-visit data alone. The output is a Power BI dashboard, an ML model, and a set of recommendations.
+It was required to understand behavior of optical retail chain customer: why customers don't come back, who actually drives revenue, and whether a repeat visit can be predicted from first-visit data alone. The output is a Power BI dashboard, an ML model, and a set of recommendations.
 
 ## Data
 
@@ -14,7 +14,7 @@ Stack: Python (pandas, scikit-learn) for cleaning and ML, PostgreSQL for cohort 
 
 ## Data cleaning
 
-"Eye exam" + "Purchase" pairs on the same day were counted as one visit, not two — removed the duplicates this created. Merged the customer database with transactions on customer_id. Ended up with 44,000 rows out of the original 67,000.
+"Eye exam" + "Purchase" data combinations on the same day were counted as one visit, created dublicates have been removed. Merged the customer database with transactions on customer_id. Ended up with 44,000 rows out of the original 67,000.
 
 ## Exploratory analysis
 
@@ -35,7 +35,7 @@ Recency / Frequency / Monetary, scored with NTILE in SQL (`vw_rfm`).
 
 ## ML: predicting repeat visits
 
-I tried to predict whether a customer would return, using only what's known at the moment of their first visit — no leakage from future data. Dropped total_spent, number_of_visits, and days_since_last_purchase right away. First-visit purchase amount I checked separately: it doesn't actually affect return likelihood, so keeping it in the model would've been wrong from a business-logic standpoint.
+Attemped to predict whether a customer would return, using only what's known at the moment of their first visit — no leakage from future data. Dropped total_spent, number_of_visits, and days_since_last_purchase right away. First-visit purchase amount I checked separately: it doesn't actually affect return likelihood, so keeping it in the model would've been wrong from a business-logic standpoint.
 
 What's left: first purchase type, age, and favorite category.
 
