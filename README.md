@@ -67,14 +67,14 @@ Top features by importance: first purchase type — contact lenses, then eyewear
 **Overview**
 ![Overview](images/1.png)
 
-**Slowdown Analysis**
-![Slowdown Analysis](images/2.png)
+**Custom Behavior**
+![Custom Behavior](images/2.png)
 
-**Model Switchers**
-![Model Switchers](images/3.png)
+**Segmentation**
+![Segmentation](images/3.png)
 
-**Loyal Clients**
-![Loyal Clients](images/4.png)
+**ML Prediction**
+![Ml Prediction](images/4.png)
 
 ## Repo structure
 
