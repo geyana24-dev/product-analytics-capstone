@@ -62,6 +62,20 @@ Top features by importance: first purchase type — contact lenses, then eyewear
 - The model is bottlenecked by how little is known at first visit. Capturing a bit more at that stage (referral source, consultation type) would make prediction more useful.
 - There's a hypothesis that a follow-up call improves return rates for lens customers — worth an A/B test.
 
+  ## Dashboard
+
+**Overview**
+![Overview](images/1.png)
+
+**Slowdown Analysis**
+![Slowdown Analysis](images/2.png)
+
+**Model Switchers**
+![Model Switchers](images/3.png)
+
+**Loyal Clients**
+![Loyal Clients](images/4.png)
+
 ## Repo structure
 
 ```
